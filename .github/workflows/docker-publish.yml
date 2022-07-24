@@ -61,7 +61,7 @@ jobs:
           platforms: linux/amd64, linux/arm64/v8
           file: Dockerfile-purple
           push: ${{ github.event_name != 'pull_request' }}
-          tags: ghcr.io/FZR-Forks/matrix-bifrost:latest
+          tags: ghcr.io/fzr-forks/matrix-bifrost:latest
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
